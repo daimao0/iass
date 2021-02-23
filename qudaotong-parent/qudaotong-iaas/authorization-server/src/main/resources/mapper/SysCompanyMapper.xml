@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aiit.mapper.SysCompanyMapper">
+  <resultMap id="BaseResultMap" type="com.aiit.domain.SysCompany">
+    <!--@mbg.generated-->
+    <!--@Table sys_company-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="stats" jdbcType="BOOLEAN" property="stats" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="purchasing_time" jdbcType="TIMESTAMP" property="purchasingTime" />
+    <result column="expiration_time" jdbcType="TIMESTAMP" property="expirationTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, company_name, create_time, stats, update_time, purchasing_time, expiration_time
+  </sql>
+</mapper>

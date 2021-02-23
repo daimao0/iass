@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aiit.mapper.SysMemberMapper">
+  <resultMap id="BaseResultMap" type="com.aiit.domain.SysMember">
+    <!--@mbg.generated-->
+    <!--@Table sys_member-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="logo" jdbcType="VARCHAR" property="logo" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="gender" jdbcType="INTEGER" property="gender" />
+    <result column="birthday" jdbcType="DATE" property="birthday" />
+    <result column="department" jdbcType="VARCHAR" property="department" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="job" jdbcType="VARCHAR" property="job" />
+    <result column="personalized_signature" jdbcType="VARCHAR" property="personalizedSignature" />
+    <result column="company" jdbcType="VARCHAR" property="company" />
+    <result column="role" jdbcType="VARCHAR" property="role" />
+    <result column="trade" jdbcType="VARCHAR" property="trade" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="product" jdbcType="VARCHAR" property="product" />
+    <result column="certification" jdbcType="BOOLEAN" property="certification" />
+    <result column="is_all_trade" jdbcType="BOOLEAN" property="isAllTrade" />
+    <result column="is_all_area" jdbcType="BOOLEAN" property="isAllArea" />
+    <result column="is_all_product" jdbcType="BOOLEAN" property="isAllProduct" />
+    <result column="has_push_msg" jdbcType="BOOLEAN" property="hasPushMsg" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, phone, `password`, logo, nickname, `status`, create_time, icon, gender, birthday, 
+    department, city, job, personalized_signature, company, `role`, trade, area, product, 
+    certification, is_all_trade, is_all_area, is_all_product, has_push_msg
+  </sql>
+</mapper>
